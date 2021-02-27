@@ -1,0 +1,64 @@
+* {
+	 box-sizing: border-box;
+}
+ body {
+	 margin: 0;
+	 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+}
+ #root {
+	 height: 100%;
+}
+ .home-container {
+	 height: 100%;
+	 padding: 0px;
+}
+ .home-container .banner-container {
+	 max-width: 100%;
+	 margin: auto;
+}
+ .home-container .banner-container .banner-desktop {
+	 max-width: 100%;
+	 height: auto;
+	 display: none;
+}
+ .home-container .banner-container .banner-mobile {
+	 max-width: 100%;
+	 height: auto;
+	 display: block;
+}
+ .home-container .content {
+	 display: flex;
+	 flex-direction: column;
+}
+ .home-container .content .paypal-container {
+	 max-width: 500px;
+	 margin: auto;
+	 padding: 50px;
+	 border-radius: 10px;
+}
+ .home-container .content .paypal-container:hover {
+	 background-color: #f3ece6;
+	 transition: background-color 1s;
+}
+ .home-container .content .workshop-container {
+	 padding: 10px;
+}
+ .home-container .content .workshop-container p {
+	 text-align: justify;
+}
+ @media only screen and (min-width: 971px) {
+	 .home-container .content {
+		 flex-direction: row;
+	}
+	 .home-container {
+	 	padding: 20px;
+	}
+	 .home-container .banner-container .banner-desktop {
+		 display: block;
+	}
+	 .home-container .banner-container .banner-mobile {
+		 display: none;
+	}
+}
