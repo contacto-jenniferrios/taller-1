@@ -61,10 +61,10 @@
 	 .home-container {
 	 	padding: 20px;
 	}
-	 .home-container .banner-container .banner-desktop {
+	 .home-container .banner-container .banner-mobile {
 		 display: block;
 	}
-	 .home-container .banner-container .banner-mobile {
+	 .home-container .banner-container .banner-desktop {
 		 display: none;
 	}
 }
