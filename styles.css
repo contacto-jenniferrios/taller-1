@@ -32,25 +32,31 @@
 	 display: flex;
 	 flex-direction: column;
 }
- .home-container .content .paypal-container {
+
+.home-container .content .promotion-cont {
+    display: flex;
+    flex-direction: row;
+}
+
+ .home-container .content .promotion-cont .paypal-container {
 	 max-width: 500px;
 	 margin: auto;
 	 padding: 50px;
 	 border-radius: 10px;
 }
- .home-container .content .paypal-container:hover {
+ .home-container .content .promotion-cont .paypal-container:hover {
 	 background-color: #A47768;
 	 transition: background-color 1s;
 }
- .home-container .content .workshop-container {
+ .home-container .content .promotion-cont .workshop-container {
 	 padding: 10px;
 }
- .home-container .content .workshop-container p {
+ .home-container .content .promotion-cont .workshop-container p {
 	 text-align: justify;
 }
  @media only screen and (min-width: 576px) {
-	 .home-container .content {
-		 flex-direction: row;
+	 .home-container .content .promotion-cont {
+		 flex-direction: column;
 	}
 	 .home-container {
 	 	padding: 20px;
