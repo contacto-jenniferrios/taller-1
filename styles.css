@@ -54,7 +54,7 @@
  .home-container .content .promotion-cont .workshop-container p {
 	 text-align: justify;
 }
- @media only screen and (min-width: 576px) {
+ @media only screen and (max-width: 576px) {
 	 .home-container .content .promotion-cont {
 		 flex-direction: column;
 	}
