@@ -52,8 +52,29 @@
                 <p>¡Te veo pronto!</p>
               </div>
           </div>
+	      <div id="paypal-button-container-P-0A545153CC8936401MTQEURA"></div>
       </div>
     </div>
   </div>
+<script src="https://www.paypal.com/sdk/js?client-id=AS8t4f3oqKmhRhv7XFyhISr8_HDLSUa5TyQRKM4yXecKhvlydZ8eMdtFsRsI29ZrjQuq19sNRadRCUWZ&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
+      style: {
+          shape: 'rect',
+          color: 'gold',
+          layout: 'vertical',
+          label: 'subscribe'
+      },
+      createSubscription: function(data, actions) {
+        return actions.subscription.create({
+          /* Creates the subscription */
+          plan_id: 'P-0A545153CC8936401MTQEURA'
+        });
+      },
+      onApprove: function(data, actions) {
+        alert(data.subscriptionID); // You can add optional success message for the subscriber here
+      }
+  }).render('#paypal-button-container-P-0A545153CC8936401MTQEURA'); // Renders the PayPal button
+</script>
   </body>
 </html>
